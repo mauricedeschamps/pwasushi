@@ -176,27 +176,27 @@
         <div id="main-content">
             <h2 id="main-heading">Sushi Types</h2>
             <div class="sushi-types">
-                <div class="sushi-card" onclick="showDetails('nigiri')">
+                <div class="sushi-card" data-type="nigiri">
                     <img src="https://source.unsplash.com/random/600x400/?nigiri,sushi" alt="Nigiri Sushi">
                     <h2 id="nigiri-title">Nigiri</h2>
                     <p id="nigiri-desc">Pressed sushi with toppings on rice</p>
                 </div>
-                <div class="sushi-card" onclick="showDetails('gunkan')">
+                <div class="sushi-card" data-type="gunkan">
                     <img src="https://source.unsplash.com/random/600x400/?gunkan,sushi" alt="Gunkan Sushi">
                     <h2 id="gunkan-title">Gunkan</h2>
                     <p id="gunkan-desc">Battleship sushi wrapped with nori</p>
                 </div>
-                <div class="sushi-card" onclick="showDetails('maki')">
+                <div class="sushi-card" data-type="maki">
                     <img src="https://source.unsplash.com/random/600x400/?maki,sushi" alt="Maki Sushi">
                     <h2 id="maki-title">Maki</h2>
                     <p id="maki-desc">Rolled sushi with various fillings</p>
                 </div>
-                <div class="sushi-card" onclick="showDetails('sides')">
+                <div class="sushi-card" data-type="sides">
                     <img src="https://source.unsplash.com/random/600x400/?japanese,side,dish" alt="Side Dishes">
                     <h2 id="sides-title">Side Dishes</h2>
                     <p id="sides-desc">Common side dishes in sushi restaurants</p>
                 </div>
-                <div class="sushi-card" onclick="showDetails('essentials')">
+                <div class="sushi-card" data-type="essentials">
                     <img src="https://source.unsplash.com/random/600x400/?sushi,condiments" alt="Sushi Essentials">
                     <h2 id="essentials-title">Sushi Essentials</h2>
                     <p id="essentials-desc">Essential items for enjoying sushi</p>
@@ -204,11 +204,9 @@
             </div>
         </div>
 
-        <!-- Nigiri Details (ツナマヨを削除) -->
+        <!-- Nigiri Details -->
         <div id="nigiri-details" class="details-container">
             <h2 id="nigiri-details-title">Nigiri Sushi</h2>
-            
-            <!-- 他のにぎりネタはそのまま保持 -->
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?tuna,sushi" alt="Maguro">
                 <div class="sushi-info">
@@ -216,35 +214,51 @@
                     <p id="nigiri1-desc">Lean red meat of tuna with mild flavor. A sushi classic.</p>
                 </div>
             </div>
-            
-            <!-- 他の19種類のにぎりネタをここに配置 -->
-            <!-- ... -->
-            
-            <button class="back-button" onclick="hideDetails()" id="back-btn1">Back to Main</button>
+            <button class="back-button" id="back-btn1">Back to Main</button>
         </div>
 
-        <!-- Gunkan Details (ツナマヨを保持) -->
+        <!-- Gunkan Details -->
         <div id="gunkan-details" class="details-container">
             <h2 id="gunkan-details-title">Gunkan Sushi</h2>
-            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?tuna,mayo" alt="Tuna Mayo">
                 <div class="sushi-info">
-                    <h3 id="gunkan5-name">Tuna Mayo</h3>
-                    <p id="gunkan5-desc">Canned tuna mixed with mayonnaise. Popular with kids.</p>
+                    <h3 id="gunkan1-name">Tuna Mayo</h3>
+                    <p id="gunkan1-desc">Canned tuna mixed with mayonnaise. Popular with kids.</p>
                 </div>
             </div>
-            
-            <!-- 他の軍艦ネタをここに配置 -->
-            <!-- ... -->
-            
-            <button class="back-button" onclick="hideDetails()" id="back-btn2">Back to Main</button>
+            <button class="back-button" id="back-btn2">Back to Main</button>
         </div>
 
-        <!-- Sushi Essentials Details (ガリ・ワサビ・抹茶を追加) -->
+        <!-- Maki Details -->
+        <div id="maki-details" class="details-container">
+            <h2 id="maki-details-title">Maki Sushi</h2>
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?tuna,roll" alt="Tekka Maki">
+                <div class="sushi-info">
+                    <h3 id="maki1-name">Tekka Maki (Tuna Roll)</h3>
+                    <p id="maki1-desc">Simple roll with tuna. Named after gambling parlors.</p>
+                </div>
+            </div>
+            <button class="back-button" id="back-btn3">Back to Main</button>
+        </div>
+
+        <!-- Side Dishes Details -->
+        <div id="sides-details" class="details-container">
+            <h2 id="sides-details-title">Side Dishes</h2>
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?chawanmushi" alt="Chawanmushi">
+                <div class="sushi-info">
+                    <h3 id="side1-name">Chawanmushi</h3>
+                    <p id="side1-desc">Savory egg custard with dashi broth. Silky texture.</p>
+                </div>
+            </div>
+            <button class="back-button" id="back-btn4">Back to Main</button>
+        </div>
+
+        <!-- Sushi Essentials Details -->
         <div id="essentials-details" class="details-container">
             <h2 id="essentials-details-title">Sushi Essentials</h2>
-            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?pickled,ginger" alt="Gari">
                 <div class="sushi-info">
@@ -252,7 +266,6 @@
                     <p id="essential1-desc">Thinly sliced young ginger pickled in sweet vinegar. Served as a palate cleanser between different types of sushi.</p>
                 </div>
             </div>
-            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?wasabi" alt="Wasabi">
                 <div class="sushi-info">
@@ -260,7 +273,6 @@
                     <p id="essential2-desc">Japanese horseradish with a sharp, pungent flavor. Used as a condiment for sushi. Real wasabi is rare and expensive - most is a mix of horseradish and food coloring.</p>
                 </div>
             </div>
-            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?matcha,tea" alt="Matcha">
                 <div class="sushi-info">
@@ -268,11 +280,7 @@
                     <p id="essential3-desc">Powdered green tea often served at sushi restaurants. Helps cleanse the palate and aids digestion. Has a slightly bitter, earthy flavor.</p>
                 </div>
             </div>
-            
-            <!-- 他の必須アイテムをここに配置 -->
-            <!-- ... -->
-            
-            <button class="back-button" onclick="hideDetails()" id="back-btn5">Back to Main</button>
+            <button class="back-button" id="back-btn5">Back to Main</button>
         </div>
     </div>
 
@@ -281,12 +289,61 @@
     </footer>
 
     <script>
-        // 言語切り替え用の翻訳データを更新
+        // DOM要素を取得
+        const mainContent = document.getElementById('main-content');
+        const detailsContainers = document.querySelectorAll('.details-container');
+        const sushiCards = document.querySelectorAll('.sushi-card');
+        const backButtons = document.querySelectorAll('.back-button');
+        const themeToggle = document.getElementById('theme-toggle');
+        const languageToggle = document.getElementById('language-toggle');
+
+        // テーマ切り替え
+        let isDarkMode = true;
+        themeToggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            document.body.classList.toggle('clear-mode');
+            themeToggle.textContent = isDarkMode ? '🌙 Dark Mode' : '☀️ Light Mode';
+        });
+
+        // 言語切り替え
+        let isEnglish = true;
         const translations = {
             'en': {
-                // ... 他の翻訳はそのまま ...
+                'app-title': 'Sushi Guide',
+                'main-heading': 'Sushi Types',
+                'nigiri-title': 'Nigiri',
+                'nigiri-desc': 'Pressed sushi with toppings on rice',
+                'gunkan-title': 'Gunkan',
+                'gunkan-desc': 'Battleship sushi wrapped with nori',
+                'maki-title': 'Maki',
+                'maki-desc': 'Rolled sushi with various fillings',
+                'sides-title': 'Side Dishes',
+                'sides-desc': 'Common side dishes in sushi restaurants',
+                'essentials-title': 'Sushi Essentials',
+                'essentials-desc': 'Essential items for enjoying sushi',
+                
+                // Nigiri
+                'nigiri-details-title': 'Nigiri Sushi',
+                'nigiri1-name': 'Maguro (Tuna)',
+                'nigiri1-desc': 'Lean red meat of tuna with mild flavor. A sushi classic.',
+                
+                // Gunkan
+                'gunkan-details-title': 'Gunkan Sushi',
+                'gunkan1-name': 'Tuna Mayo',
+                'gunkan1-desc': 'Canned tuna mixed with mayonnaise. Popular with kids.',
+                
+                // Maki
+                'maki-details-title': 'Maki Sushi',
+                'maki1-name': 'Tekka Maki (Tuna Roll)',
+                'maki1-desc': 'Simple roll with tuna. Named after gambling parlors.',
+                
+                // Side Dishes
+                'sides-details-title': 'Side Dishes',
+                'side1-name': 'Chawanmushi',
+                'side1-desc': 'Savory egg custard with dashi broth. Silky texture.',
                 
                 // Essentials
+                'essentials-details-title': 'Sushi Essentials',
                 'essential1-name': 'Gari (Pickled Ginger)',
                 'essential1-desc': 'Thinly sliced young ginger pickled in sweet vinegar. Served as a palate cleanser between different types of sushi.',
                 'essential2-name': 'Wasabi',
@@ -294,12 +351,52 @@
                 'essential3-name': 'Matcha (Green Tea)',
                 'essential3-desc': 'Powdered green tea often served at sushi restaurants. Helps cleanse the palate and aids digestion. Has a slightly bitter, earthy flavor.',
                 
-                // ... 他の翻訳はそのまま ...
+                // Back buttons
+                'back-btn1': 'Back to Main',
+                'back-btn2': 'Back to Main',
+                'back-btn3': 'Back to Main',
+                'back-btn4': 'Back to Main',
+                'back-btn5': 'Back to Main',
+                
+                // Footer
+                'contact-text': 'Contact me<br><a href="mailto:mementomorikatsu@gmail.com">mementomorikatsu@gmail.com</a>'
             },
             'ja': {
-                // ... 他の翻訳はそのまま ...
+                'app-title': '寿司ガイド',
+                'main-heading': '寿司の種類',
+                'nigiri-title': '握り寿司',
+                'nigiri-desc': 'シャリの上にネタを乗せたシンプルな寿司',
+                'gunkan-title': '軍艦巻き',
+                'gunkan-desc': '海苔で巻いて具材をのせるタイプ',
+                'maki-title': '巻物',
+                'maki-desc': '海苔と酢飯で具材を巻いたもの',
+                'sides-title': 'サイドメニュー',
+                'sides-desc': '寿司屋でよく見かけるサイドメニュー',
+                'essentials-title': '寿司の必需品',
+                'essentials-desc': '寿司を楽しむために必要なアイテム',
+                
+                // Nigiri
+                'nigiri-details-title': '握り寿司',
+                'nigiri1-name': 'マグロ（赤身）',
+                'nigiri1-desc': '脂が少なくさっぱりとした味わい。寿司の定番。',
+                
+                // Gunkan
+                'gunkan-details-title': '軍艦巻き',
+                'gunkan1-name': 'ツナマヨ',
+                'gunkan1-desc': 'マヨネーズとツナの組み合わせ。子どもに人気。',
+                
+                // Maki
+                'maki-details-title': '巻物',
+                'maki1-name': '鉄火巻き（マグロ）',
+                'maki1-desc': '赤身のマグロを巻いたシンプルな巻き寿司。',
+                
+                // Side Dishes
+                'sides-details-title': 'サイドメニュー',
+                'side1-name': '茶碗蒸し',
+                'side1-desc': '出汁のきった卵料理。',
                 
                 // Essentials
+                'essentials-details-title': '寿司の必需品',
                 'essential1-name': 'ガリ（甘酢生姜）',
                 'essential1-desc': '薄切りにしたしょうがを甘酢に漬けたもの。寿司の合間に口をリフレッシュさせるために使います。',
                 'essential2-name': 'ワサビ',
@@ -307,12 +404,76 @@
                 'essential3-name': '抹茶',
                 'essential3-desc': '寿司屋でよく出される粉状の緑茶。口の中をさっぱりさせ、消化を助けます。ほのかな苦味と深い味わいが特徴です。',
                 
-                // ... 他の翻訳はそのまま ...
+                // Back buttons
+                'back-btn1': 'メインに戻る',
+                'back-btn2': 'メインに戻る',
+                'back-btn3': 'メインに戻る',
+                'back-btn4': 'メインに戻る',
+                'back-btn5': 'メインに戻る',
+                
+                // Footer
+                'contact-text': '連絡先<br><a href="mailto:mementomorikatsu@gmail.com">mementomorikatsu@gmail.com</a>'
             }
         };
 
-        // 他のJavaScriptコードは変更なし
-        // ...
+        languageToggle.addEventListener('click', () => {
+            isEnglish = !isEnglish;
+            const lang = isEnglish ? 'en' : 'ja';
+            languageToggle.textContent = isEnglish ? '🇬🇧 English' : '🇯🇵 日本語';
+            
+            // すべてのテキスト要素を更新
+            for (const [key, value] of Object.entries(translations[lang])) {
+                const element = document.getElementById(key);
+                if (element) {
+                    if (key === 'contact-text') {
+                        element.innerHTML = value;
+                    } else {
+                        element.textContent = value;
+                    }
+                }
+            }
+        });
+
+        // 詳細ページ表示関数
+        function showDetails(type) {
+            mainContent.style.display = 'none';
+            document.getElementById(`${type}-details`).style.display = 'block';
+        }
+
+        // メインページに戻る関数
+        function hideDetails() {
+            mainContent.style.display = 'block';
+            detailsContainers.forEach(container => {
+                container.style.display = 'none';
+            });
+        }
+
+        // カードクリックイベント
+        sushiCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const type = card.getAttribute('data-type');
+                showDetails(type);
+            });
+        });
+
+        // 戻るボタンイベント
+        backButtons.forEach(button => {
+            button.addEventListener('click', hideDetails);
+        });
+
+        // PWA設定
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').then(registration => {
+                    console.log('SW registered: ', registration);
+                }).catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError);
+                });
+            });
+        }
+
+        // 初期表示設定
+        hideDetails();
     </script>
 </body>
 </html>
