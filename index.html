@@ -176,27 +176,27 @@
         <div id="main-content">
             <h2 id="main-heading">Sushi Types</h2>
             <div class="sushi-types">
-                <div class="sushi-card" data-type="nigiri">
+                <div class="sushi-card" onclick="showDetails('nigiri')">
                     <img src="https://source.unsplash.com/random/600x400/?nigiri,sushi" alt="Nigiri Sushi">
                     <h2 id="nigiri-title">Nigiri</h2>
                     <p id="nigiri-desc">Pressed sushi with toppings on rice</p>
                 </div>
-                <div class="sushi-card" data-type="gunkan">
+                <div class="sushi-card" onclick="showDetails('gunkan')">
                     <img src="https://source.unsplash.com/random/600x400/?gunkan,sushi" alt="Gunkan Sushi">
                     <h2 id="gunkan-title">Gunkan</h2>
                     <p id="gunkan-desc">Battleship sushi wrapped with nori</p>
                 </div>
-                <div class="sushi-card" data-type="maki">
+                <div class="sushi-card" onclick="showDetails('maki')">
                     <img src="https://source.unsplash.com/random/600x400/?maki,sushi" alt="Maki Sushi">
                     <h2 id="maki-title">Maki</h2>
                     <p id="maki-desc">Rolled sushi with various fillings</p>
                 </div>
-                <div class="sushi-card" data-type="sides">
+                <div class="sushi-card" onclick="showDetails('sides')">
                     <img src="https://source.unsplash.com/random/600x400/?japanese,side,dish" alt="Side Dishes">
                     <h2 id="sides-title">Side Dishes</h2>
                     <p id="sides-desc">Common side dishes in sushi restaurants</p>
                 </div>
-                <div class="sushi-card" data-type="essentials">
+                <div class="sushi-card" onclick="showDetails('essentials')">
                     <img src="https://source.unsplash.com/random/600x400/?sushi,condiments" alt="Sushi Essentials">
                     <h2 id="essentials-title">Sushi Essentials</h2>
                     <p id="essentials-desc">Essential items for enjoying sushi</p>
@@ -207,6 +207,7 @@
         <!-- Nigiri Details -->
         <div id="nigiri-details" class="details-container">
             <h2 id="nigiri-details-title">Nigiri Sushi</h2>
+            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?tuna,sushi" alt="Maguro">
                 <div class="sushi-info">
@@ -214,25 +215,142 @@
                     <p id="nigiri1-desc">Lean red meat of tuna with mild flavor. A sushi classic.</p>
                 </div>
             </div>
-            <button class="back-button" id="back-btn1">Back to Main</button>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?chutoro,sushi" alt="Chutoro">
+                <div class="sushi-info">
+                    <h3 id="nigiri2-name">Chutoro (Medium-fat Tuna)</h3>
+                    <p id="nigiri2-desc">Medium-fatty tuna with perfect balance of flavor and texture.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?otoro,sushi" alt="Otoro">
+                <div class="sushi-info">
+                    <h3 id="nigiri3-name">Otoro (Fatty Tuna)</h3>
+                    <p id="nigiri3-desc">The fattiest part of tuna with melt-in-your-mouth texture.</p>
+                </div>
+            </div>
+            
+            <!-- Add all nigiri items here -->
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?salmon,sushi" alt="Salmon">
+                <div class="sushi-info">
+                    <h3 id="nigiri4-name">Salmon</h3>
+                    <p id="nigiri4-desc">Orange-colored with rich fat content. Mild and popular.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?shrimp,sushi" alt="Ebi">
+                <div class="sushi-info">
+                    <h3 id="nigiri5-name">Ebi (Shrimp)</h3>
+                    <p id="nigiri5-desc">Sweet flavor with soft texture. Often served cooked.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?squid,sushi" alt="Ika">
+                <div class="sushi-info">
+                    <h3 id="nigiri6-name">Ika (Squid)</h3>
+                    <p id="nigiri6-desc">Chewy texture with subtle sweetness.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?scallop,sushi" alt="Hotate">
+                <div class="sushi-info">
+                    <h3 id="nigiri7-name">Hotate (Scallop)</h3>
+                    <p id="nigiri7-desc">Sweet and buttery with delicate texture.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?eel,sushi" alt="Anago">
+                <div class="sushi-info">
+                    <h3 id="nigiri8-name">Anago (Saltwater Eel)</h3>
+                    <p id="nigiri8-desc">Soft texture with sweet soy-based glaze.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?mackerel,sushi" alt="Saba">
+                <div class="sushi-info">
+                    <h3 id="nigiri9-name">Saba (Mackerel)</h3>
+                    <p id="nigiri9-desc">Rich flavor, usually served with vinegar cure.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?egg,sushi" alt="Tamago">
+                <div class="sushi-info">
+                    <h3 id="nigiri10-name">Tamago (Egg)</h3>
+                    <p id="nigiri10-desc">Sweet layered omelet, a traditional finish to sushi meals.</p>
+                </div>
+            </div>
+            
+            <button class="back-button" onclick="hideDetails()" id="back-btn1">Back to Main</button>
         </div>
 
         <!-- Gunkan Details -->
         <div id="gunkan-details" class="details-container">
             <h2 id="gunkan-details-title">Gunkan Sushi</h2>
+            
             <div class="sushi-item">
-                <img src="https://source.unsplash.com/random/600x400/?tuna,mayo" alt="Tuna Mayo">
+                <img src="https://source.unsplash.com/random/600x400/?sea,urchin" alt="Uni">
                 <div class="sushi-info">
-                    <h3 id="gunkan1-name">Tuna Mayo</h3>
-                    <p id="gunkan1-desc">Canned tuna mixed with mayonnaise. Popular with kids.</p>
+                    <h3 id="gunkan1-name">Uni (Sea Urchin)</h3>
+                    <p id="gunkan1-desc">Rich, creamy texture with sweet ocean flavor. A delicacy.</p>
                 </div>
             </div>
-            <button class="back-button" id="back-btn2">Back to Main</button>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?salmon,roe" alt="Ikura">
+                <div class="sushi-info">
+                    <h3 id="gunkan2-name">Ikura (Salmon Roe)</h3>
+                    <p id="gunkan2-desc">Bursting texture with salty-sweet flavor. Usually soy-marinated.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?spicy,tuna" alt="Negitoro">
+                <div class="sushi-info">
+                    <h3 id="gunkan3-name">Negitoro (Tuna Scallion)</h3>
+                    <p id="gunkan3-desc">Minced fatty tuna with green onions. Rich and flavorful.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?crab,roe" alt="Kani Miso">
+                <div class="sushi-info">
+                    <h3 id="gunkan4-name">Kani Miso (Crab Innards)</h3>
+                    <p id="gunkan4-desc">Rich and creamy crab innards with intense umami flavor.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?tobiko" alt="Tobiko">
+                <div class="sushi-info">
+                    <h3 id="gunkan5-name">Tobiko (Flying Fish Roe)</h3>
+                    <p id="gunkan5-desc">Small, crunchy eggs with mild salty taste. Often colored.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?mentaiko" alt="Mentaiko">
+                <div class="sushi-info">
+                    <h3 id="gunkan6-name">Mentaiko (Spicy Cod Roe)</h3>
+                    <p id="gunkan6-desc">Spicy marinated cod roe with distinctive red color.</p>
+                </div>
+            </div>
+            
+            <button class="back-button" onclick="hideDetails()" id="back-btn2">Back to Main</button>
         </div>
 
         <!-- Maki Details -->
         <div id="maki-details" class="details-container">
             <h2 id="maki-details-title">Maki Sushi</h2>
+            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?tuna,roll" alt="Tekka Maki">
                 <div class="sushi-info">
@@ -240,12 +358,78 @@
                     <p id="maki1-desc">Simple roll with tuna. Named after gambling parlors.</p>
                 </div>
             </div>
-            <button class="back-button" id="back-btn3">Back to Main</button>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?california,roll" alt="California Roll">
+                <div class="sushi-info">
+                    <h3 id="maki2-name">California Roll</h3>
+                    <p id="maki2-desc">Inside-out roll with crab, avocado and cucumber. Western-style.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?cucumber,roll" alt="Kappa Maki">
+                <div class="sushi-info">
+                    <h3 id="maki3-name">Kappa Maki (Cucumber Roll)</h3>
+                    <p id="maki3-desc">Refreshing cucumber roll. Named after a water spirit.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?fatty,tuna,roll" alt="Negitoro Maki">
+                <div class="sushi-info">
+                    <h3 id="maki4-name">Negitoro Maki</h3>
+                    <p id="maki4-desc">Minced fatty tuna and green onion roll.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?shrimp,tempura,roll" alt="Ebi Tempura Maki">
+                <div class="sushi-info">
+                    <h3 id="maki5-name">Ebi Tempura Maki</h3>
+                    <p id="maki5-desc">Crispy shrimp tempura inside sushi roll.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?salmon,roll" alt="Sake Maki">
+                <div class="sushi-info">
+                    <h3 id="maki6-name">Sake Maki (Salmon Roll)</h3>
+                    <p id="maki6-desc">Simple roll with fresh salmon.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?natto,roll" alt="Natto Maki">
+                <div class="sushi-info">
+                    <h3 id="maki7-name">Natto Maki</h3>
+                    <p id="maki7-desc">Fermented soybean roll with sticky texture.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?pickled,radish,roll" alt="Kanpyo Maki">
+                <div class="sushi-info">
+                    <h3 id="maki8-name">Kanpyo Maki</h3>
+                    <p id="maki8-desc">Dried gourd strips simmered in sweet sauce.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?ume,roll" alt="Ume Maki">
+                <div class="sushi-info">
+                    <h3 id="maki9-name">Ume Maki</h3>
+                    <p id="maki9-desc">Pickled plum paste roll with shiso leaf.</p>
+                </div>
+            </div>
+            
+            <button class="back-button" onclick="hideDetails()" id="back-btn3">Back to Main</button>
         </div>
 
         <!-- Side Dishes Details -->
         <div id="sides-details" class="details-container">
             <h2 id="sides-details-title">Side Dishes</h2>
+            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?chawanmushi" alt="Chawanmushi">
                 <div class="sushi-info">
@@ -253,12 +437,54 @@
                     <p id="side1-desc">Savory egg custard with dashi broth. Silky texture.</p>
                 </div>
             </div>
-            <button class="back-button" id="back-btn4">Back to Main</button>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?miso,soup" alt="Miso Soup">
+                <div class="sushi-info">
+                    <h3 id="side2-name">Miso Soup</h3>
+                    <p id="side2-desc">Traditional soup with tofu and seaweed. Classic accompaniment.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?tempura" alt="Tempura">
+                <div class="sushi-info">
+                    <h3 id="side3-name">Tempura</h3>
+                    <p id="side3-desc">Lightly battered and fried seafood/vegetables. Crispy texture.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?edamame" alt="Edamame">
+                <div class="sushi-info">
+                    <h3 id="side4-name">Edamame</h3>
+                    <p id="side4-desc">Young soybeans boiled in salt water. Popular appetizer.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?sunomono" alt="Sunomono">
+                <div class="sushi-info">
+                    <h3 id="side5-name">Sunomono</h3>
+                    <p id="side5-desc">Vinegared salad with cucumber and seafood.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?sashimi" alt="Sashimi">
+                <div class="sushi-info">
+                    <h3 id="side6-name">Sashimi</h3>
+                    <p id="side6-desc">Sliced raw fish without rice. Highlights pure fish flavor.</p>
+                </div>
+            </div>
+            
+            <button class="back-button" onclick="hideDetails()" id="back-btn4">Back to Main</button>
         </div>
 
         <!-- Sushi Essentials Details -->
         <div id="essentials-details" class="details-container">
             <h2 id="essentials-details-title">Sushi Essentials</h2>
+            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?pickled,ginger" alt="Gari">
                 <div class="sushi-info">
@@ -266,6 +492,7 @@
                     <p id="essential1-desc">Thinly sliced young ginger pickled in sweet vinegar. Served as a palate cleanser between different types of sushi.</p>
                 </div>
             </div>
+            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?wasabi" alt="Wasabi">
                 <div class="sushi-info">
@@ -273,6 +500,7 @@
                     <p id="essential2-desc">Japanese horseradish with a sharp, pungent flavor. Used as a condiment for sushi. Real wasabi is rare and expensive - most is a mix of horseradish and food coloring.</p>
                 </div>
             </div>
+            
             <div class="sushi-item">
                 <img src="https://source.unsplash.com/random/600x400/?matcha,tea" alt="Matcha">
                 <div class="sushi-info">
@@ -280,7 +508,32 @@
                     <p id="essential3-desc">Powdered green tea often served at sushi restaurants. Helps cleanse the palate and aids digestion. Has a slightly bitter, earthy flavor.</p>
                 </div>
             </div>
-            <button class="back-button" id="back-btn5">Back to Main</button>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?soy,sauce" alt="Soy Sauce">
+                <div class="sushi-info">
+                    <h3 id="essential4-name">Soy Sauce</h3>
+                    <p id="essential4-desc">Essential dipping sauce for sushi. Use sparingly to avoid overpowering delicate flavors.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?sushi,rice" alt="Shari">
+                <div class="sushi-info">
+                    <h3 id="essential5-name">Shari (Sushi Rice)</h3>
+                    <p id="essential5-desc">Specially prepared vinegared rice that forms the base of all sushi.</p>
+                </div>
+            </div>
+            
+            <div class="sushi-item">
+                <img src="https://source.unsplash.com/random/600x400/?nori" alt="Nori">
+                <div class="sushi-info">
+                    <h3 id="essential6-name">Nori (Seaweed)</h3>
+                    <p id="essential6-desc">Edible seaweed used to wrap sushi rolls and gunkan.</p>
+                </div>
+            </div>
+            
+            <button class="back-button" onclick="hideDetails()" id="back-btn5">Back to Main</button>
         </div>
     </div>
 
@@ -289,23 +542,23 @@
     </footer>
 
     <script>
-        // DOM要素を取得
-        const mainContent = document.getElementById('main-content');
-        const detailsContainers = document.querySelectorAll('.details-container');
-        const sushiCards = document.querySelectorAll('.sushi-card');
-        const backButtons = document.querySelectorAll('.back-button');
+        // Theme toggle
         const themeToggle = document.getElementById('theme-toggle');
-        const languageToggle = document.getElementById('language-toggle');
-
-        // テーマ切り替え
         let isDarkMode = true;
+        
         themeToggle.addEventListener('click', () => {
             isDarkMode = !isDarkMode;
-            document.body.classList.toggle('clear-mode');
-            themeToggle.textContent = isDarkMode ? '🌙 Dark Mode' : '☀️ Light Mode';
+            if (isDarkMode) {
+                document.body.classList.remove('clear-mode');
+                themeToggle.textContent = '🌙 Dark Mode';
+            } else {
+                document.body.classList.add('clear-mode');
+                themeToggle.textContent = '☀️ Light Mode';
+            }
         });
 
-        // 言語切り替え
+        // Language toggle
+        const languageToggle = document.getElementById('language-toggle');
         let isEnglish = true;
         const translations = {
             'en': {
@@ -326,23 +579,77 @@
                 'nigiri-details-title': 'Nigiri Sushi',
                 'nigiri1-name': 'Maguro (Tuna)',
                 'nigiri1-desc': 'Lean red meat of tuna with mild flavor. A sushi classic.',
+                'nigiri2-name': 'Chutoro (Medium-fat Tuna)',
+                'nigiri2-desc': 'Medium-fatty tuna with perfect balance of flavor and texture.',
+                'nigiri3-name': 'Otoro (Fatty Tuna)',
+                'nigiri3-desc': 'The fattiest part of tuna with melt-in-your-mouth texture.',
+                'nigiri4-name': 'Salmon',
+                'nigiri4-desc': 'Orange-colored with rich fat content. Mild and popular.',
+                'nigiri5-name': 'Ebi (Shrimp)',
+                'nigiri5-desc': 'Sweet flavor with soft texture. Often served cooked.',
+                'nigiri6-name': 'Ika (Squid)',
+                'nigiri6-desc': 'Chewy texture with subtle sweetness.',
+                'nigiri7-name': 'Hotate (Scallop)',
+                'nigiri7-desc': 'Sweet and buttery with delicate texture.',
+                'nigiri8-name': 'Anago (Saltwater Eel)',
+                'nigiri8-desc': 'Soft texture with sweet soy-based glaze.',
+                'nigiri9-name': 'Saba (Mackerel)',
+                'nigiri9-desc': 'Rich flavor, usually served with vinegar cure.',
+                'nigiri10-name': 'Tamago (Egg)',
+                'nigiri10-desc': 'Sweet layered omelet, a traditional finish to sushi meals.',
                 
                 // Gunkan
                 'gunkan-details-title': 'Gunkan Sushi',
-                'gunkan1-name': 'Tuna Mayo',
-                'gunkan1-desc': 'Canned tuna mixed with mayonnaise. Popular with kids.',
+                'gunkan1-name': 'Uni (Sea Urchin)',
+                'gunkan1-desc': 'Rich, creamy texture with sweet ocean flavor. A delicacy.',
+                'gunkan2-name': 'Ikura (Salmon Roe)',
+                'gunkan2-desc': 'Bursting texture with salty-sweet flavor. Usually soy-marinated.',
+                'gunkan3-name': 'Negitoro (Tuna Scallion)',
+                'gunkan3-desc': 'Minced fatty tuna with green onions. Rich and flavorful.',
+                'gunkan4-name': 'Kani Miso (Crab Innards)',
+                'gunkan4-desc': 'Rich and creamy crab innards with intense umami flavor.',
+                'gunkan5-name': 'Tobiko (Flying Fish Roe)',
+                'gunkan5-desc': 'Small, crunchy eggs with mild salty taste. Often colored.',
+                'gunkan6-name': 'Mentaiko (Spicy Cod Roe)',
+                'gunkan6-desc': 'Spicy marinated cod roe with distinctive red color.',
                 
                 // Maki
                 'maki-details-title': 'Maki Sushi',
                 'maki1-name': 'Tekka Maki (Tuna Roll)',
                 'maki1-desc': 'Simple roll with tuna. Named after gambling parlors.',
+                'maki2-name': 'California Roll',
+                'maki2-desc': 'Inside-out roll with crab, avocado and cucumber. Western-style.',
+                'maki3-name': 'Kappa Maki (Cucumber Roll)',
+                'maki3-desc': 'Refreshing cucumber roll. Named after a water spirit.',
+                'maki4-name': 'Negitoro Maki',
+                'maki4-desc': 'Minced fatty tuna and green onion roll.',
+                'maki5-name': 'Ebi Tempura Maki',
+                'maki5-desc': 'Crispy shrimp tempura inside sushi roll.',
+                'maki6-name': 'Sake Maki (Salmon Roll)',
+                'maki6-desc': 'Simple roll with fresh salmon.',
+                'maki7-name': 'Natto Maki',
+                'maki7-desc': 'Fermented soybean roll with sticky texture.',
+                'maki8-name': 'Kanpyo Maki',
+                'maki8-desc': 'Dried gourd strips simmered in sweet sauce.',
+                'maki9-name': 'Ume Maki',
+                'maki9-desc': 'Pickled plum paste roll with shiso leaf.',
                 
                 // Side Dishes
                 'sides-details-title': 'Side Dishes',
                 'side1-name': 'Chawanmushi',
                 'side1-desc': 'Savory egg custard with dashi broth. Silky texture.',
+                'side2-name': 'Miso Soup',
+                'side2-desc': 'Traditional soup with tofu and seaweed. Classic accompaniment.',
+                'side3-name': 'Tempura',
+                'side3-desc': 'Lightly battered and fried seafood/vegetables. Crispy texture.',
+                'side4-name': 'Edamame',
+                'side4-desc': 'Young soybeans boiled in salt water. Popular appetizer.',
+                'side5-name': 'Sunomono',
+                'side5-desc': 'Vinegared salad with cucumber and seafood.',
+                'side6-name': 'Sashimi',
+                'side6-desc': 'Sliced raw fish without rice. Highlights pure fish flavor.',
                 
-                // Essentials
+                // Sushi Essentials
                 'essentials-details-title': 'Sushi Essentials',
                 'essential1-name': 'Gari (Pickled Ginger)',
                 'essential1-desc': 'Thinly sliced young ginger pickled in sweet vinegar. Served as a palate cleanser between different types of sushi.',
@@ -350,6 +657,12 @@
                 'essential2-desc': 'Japanese horseradish with a sharp, pungent flavor. Used as a condiment for sushi. Real wasabi is rare and expensive - most is a mix of horseradish and food coloring.',
                 'essential3-name': 'Matcha (Green Tea)',
                 'essential3-desc': 'Powdered green tea often served at sushi restaurants. Helps cleanse the palate and aids digestion. Has a slightly bitter, earthy flavor.',
+                'essential4-name': 'Soy Sauce',
+                'essential4-desc': 'Essential dipping sauce for sushi. Use sparingly to avoid overpowering delicate flavors.',
+                'essential5-name': 'Shari (Sushi Rice)',
+                'essential5-desc': 'Specially prepared vinegared rice that forms the base of all sushi.',
+                'essential6-name': 'Nori (Seaweed)',
+                'essential6-desc': 'Edible seaweed used to wrap sushi rolls and gunkan.',
                 
                 // Back buttons
                 'back-btn1': 'Back to Main',
@@ -379,23 +692,77 @@
                 'nigiri-details-title': '握り寿司',
                 'nigiri1-name': 'マグロ（赤身）',
                 'nigiri1-desc': '脂が少なくさっぱりとした味わい。寿司の定番。',
+                'nigiri2-name': '中トロ',
+                'nigiri2-desc': 'マグロの中腹部。脂と赤身のバランスが絶妙。',
+                'nigiri3-name': '大トロ',
+                'nigiri3-desc': 'マグロの最も脂ののった部分。とろけるような食感。',
+                'nigiri4-name': 'サーモン',
+                'nigiri4-desc': 'オレンジ色で脂がのっており、マイルドな味。人気ネタ。',
+                'nigiri5-name': 'エビ',
+                'nigiri5-desc': '甘みがあり、子どもにも人気。ボイルされていることが多い。',
+                'nigiri6-name': 'イカ',
+                'nigiri6-desc': 'プリッとした食感とほのかな甘み。',
+                'nigiri7-name': 'ホタテ',
+                'nigiri7-desc': '甘みが強く、とろけるような食感。',
+                'nigiri8-name': 'アナゴ',
+                'nigiri8-desc': 'やわらかく甘じょっぱいタレがかかっている。',
+                'nigiri9-name': 'サバ',
+                'nigiri9-desc': '酢で締めてあり、さっぱりとした味。',
+                'nigiri10-name': '玉子',
+                'nigiri10-desc': '甘いだし巻き卵。寿司の締めに食べられる。',
                 
                 // Gunkan
                 'gunkan-details-title': '軍艦巻き',
-                'gunkan1-name': 'ツナマヨ',
-                'gunkan1-desc': 'マヨネーズとツナの組み合わせ。子どもに人気。',
+                'gunkan1-name': 'ウニ',
+                'gunkan1-desc': '濃厚で甘みがあり、とろけるような食感。高級ネタ。',
+                'gunkan2-name': 'イクラ',
+                'gunkan2-desc': 'プチプチとした食感。醤油漬けで提供されることが多い。',
+                'gunkan3-name': 'ネギトロ',
+                'gunkan3-desc': 'マグロの切り身とネギを混ぜたもの。コクがある。',
+                'gunkan4-name': 'カニみそ',
+                'gunkan4-desc': 'カニの甲羅の中にある味噌。濃厚で独特の風味。',
+                'gunkan5-name': 'とびこ',
+                'gunkan5-desc': '小さくてパリパリした食感。色付けされていることが多い。',
+                'gunkan6-name': '明太子',
+                'gunkan6-desc': '辛子明太子。ピリッとした辛みが特徴。',
                 
                 // Maki
                 'maki-details-title': '巻物',
-                'maki1-name': '鉄火巻き（マグロ）',
+                'maki1-name': '鉄火巻き',
                 'maki1-desc': '赤身のマグロを巻いたシンプルな巻き寿司。',
+                'maki2-name': 'カリフォルニアロール',
+                'maki2-desc': 'アボカド・カニかま・マヨネーズなどが入った洋風巻き。',
+                'maki3-name': 'かっぱ巻き',
+                'maki3-desc': 'さっぱりとしたキュウリの巻き寿司。',
+                'maki4-name': 'ネギトロ巻き',
+                'maki4-desc': 'ネギトロを巻いたボリュームのある巻き寿司。',
+                'maki5-name': 'えび天巻き',
+                'maki5-desc': '揚げたエビの天ぷらが入ったボリューム巻き。',
+                'maki6-name': 'サーモン巻き',
+                'maki6-desc': '新鮮なサーモンを使ったシンプルな巻き寿司。',
+                'maki7-name': '納豆巻き',
+                'maki7-desc': '納豆のネバネバ感が特徴。関東で人気。',
+                'maki8-name': 'かんぴょう巻き',
+                'maki8-desc': '干し瓢を甘く煮た具材の巻き寿司。',
+                'maki9-name': '梅巻き',
+                'maki9-desc': '梅干しとしその葉を使ったさっぱりした巻き寿司。',
                 
                 // Side Dishes
                 'sides-details-title': 'サイドメニュー',
                 'side1-name': '茶碗蒸し',
                 'side1-desc': '出汁のきった卵料理。',
+                'side2-name': '味噌汁',
+                'side2-desc': 'アサリや豆腐入りが定番。',
+                'side3-name': '天ぷら',
+                'side3-desc': 'エビや野菜の揚げ物。',
+                'side4-name': '枝豆',
+                'side4-desc': '塩ゆでした大豆。ビールのおつまみに最適。',
+                'side5-name': '酢の物',
+                'side5-desc': '酢で和えた海鮮と野菜のサラダ。',
+                'side6-name': '刺身',
+                'side6-desc': '新鮮な魚をそのまま切った料理。',
                 
-                // Essentials
+                // Sushi Essentials
                 'essentials-details-title': '寿司の必需品',
                 'essential1-name': 'ガリ（甘酢生姜）',
                 'essential1-desc': '薄切りにしたしょうがを甘酢に漬けたもの。寿司の合間に口をリフレッシュさせるために使います。',
@@ -403,6 +770,12 @@
                 'essential2-desc': '日本原産の山葵から作られる辛味調味料。本物のワサビは高価で、一般的には西洋ワサビと着色料で代用されています。',
                 'essential3-name': '抹茶',
                 'essential3-desc': '寿司屋でよく出される粉状の緑茶。口の中をさっぱりさせ、消化を助けます。ほのかな苦味と深い味わいが特徴です。',
+                'essential4-name': '醤油',
+                'essential4-desc': '寿司につける基本的な調味料。つけすぎると素材の味が消えるので注意。',
+                'essential5-name': 'シャリ（寿司飯）',
+                'essential5-desc': '酢、塩、砂糖で味付けした寿司専用のご飯。',
+                'essential6-name': '海苔',
+                'essential6-desc': '巻き寿司や軍艦巻きに使用される食用の海藻。',
                 
                 // Back buttons
                 'back-btn1': 'メインに戻る',
@@ -421,7 +794,7 @@
             const lang = isEnglish ? 'en' : 'ja';
             languageToggle.textContent = isEnglish ? '🇬🇧 English' : '🇯🇵 日本語';
             
-            // すべてのテキスト要素を更新
+            // Update all text elements
             for (const [key, value] of Object.entries(translations[lang])) {
                 const element = document.getElementById(key);
                 if (element) {
@@ -434,34 +807,20 @@
             }
         });
 
-        // 詳細ページ表示関数
+        // Show/hide details
         function showDetails(type) {
-            mainContent.style.display = 'none';
+            document.getElementById('main-content').style.display = 'none';
             document.getElementById(`${type}-details`).style.display = 'block';
         }
 
-        // メインページに戻る関数
         function hideDetails() {
-            mainContent.style.display = 'block';
-            detailsContainers.forEach(container => {
-                container.style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+            document.querySelectorAll('.details-container').forEach(el => {
+                el.style.display = 'none';
             });
         }
 
-        // カードクリックイベント
-        sushiCards.forEach(card => {
-            card.addEventListener('click', () => {
-                const type = card.getAttribute('data-type');
-                showDetails(type);
-            });
-        });
-
-        // 戻るボタンイベント
-        backButtons.forEach(button => {
-            button.addEventListener('click', hideDetails);
-        });
-
-        // PWA設定
+        // PWA manifest
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('sw.js').then(registration => {
@@ -471,9 +830,6 @@
                 });
             });
         }
-
-        // 初期表示設定
-        hideDetails();
     </script>
 </body>
 </html>
