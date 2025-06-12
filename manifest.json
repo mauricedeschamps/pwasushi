@@ -2,7 +2,7 @@
   "name": "Sushi Guide",
   "short_name": "SushiGuide",
   "description": "A guide to conveyor belt sushi for foreigners",
-  "start_url": "https://mauricedeschamps.github.io/pwasushi/",
+  "start_url": "https://mauricedeschamps.github.io/pwasushi/index.html",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212",
